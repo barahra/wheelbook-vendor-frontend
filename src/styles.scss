@@ -1,0 +1,92 @@
+@import "../src/assets/scss/variables/variables";
+
+/*Including bootstrap scss*/
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 95%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cp {
+    cursor: pointer;
+}
+
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fs0-8 {
+    font-size: 80%;
+}
+
+.fs0-9 {
+    font-size: 90%;
+}
+
+.btn-overall {
+    padding: 10px 12px;
+}
+
+.btn-rounded {
+    border-radius: 25px;
+}
+
+.ig-wrapper {
+    position: relative;
+}
+
+.ig-wrapper .icon-left {
+    padding: 12px 16px;
+    background-color: $white;
+    border-right: 0px !important;
+    color: $orange;
+}
+
+.ig-wrapper .input-right {
+    padding: 12px 16px;
+    background-color: $white;
+    border: 1px solid #ced4da !important;
+    border-left: 0px !important;
+    
+}
+
+.ig-wrapper .input-left {
+    padding: 12px 16px;
+    background-color: $white;
+    border: 1px solid #ced4da !important;
+    border-left: 0px !important;
+}
+
+.ig-wrapper .input-center {
+    padding: 12px 16px;
+    background-color: $white;
+    border: 1px solid #ced4da !important;
+    border-left: 0px !important;
+}
+.ig-wrapper input:focus,
+.ig-wrapper input:hover{
+    outline: none !important;
+    box-shadow: none !important;
+  
+}
+
+.ig-wrapper .icon-right {
+    padding: 12px 16px;
+    color: $orange;
+    border-left: 0px !important;
+}
