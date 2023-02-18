@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MasterRoutingModule } from './master-routing.module';
-import { MasterComponent } from './master/master.component';
+import { MasterComponent } from './master.component';
+
 
 
 @NgModule({
