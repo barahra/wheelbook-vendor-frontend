@@ -10,6 +10,9 @@ import { SideNavComponent } from './side-nav/side-nav.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[
+    SideNavComponent
+  ],
 })
 export class SideNavModule { }
