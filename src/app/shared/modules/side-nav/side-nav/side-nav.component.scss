@@ -1,0 +1,116 @@
+@import "/src/assets/scss/variables/variables";
+
+@media screen and (max-width: 576px) {
+  .sidenav-wrapper {
+    display: none;
+  }
+  .sidenav-min {
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: lighten($color: $primary, $amount: 10%);
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 100;
+    display: block;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .sidenav-wrapper {
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: lighten($color: $primary, $amount: 10%);
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 100;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sidenav-min {
+    display: none;
+  }
+  .sidenav-wrapper {
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: lighten($color: $primary, $amount: 10%);
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 100;
+    display: block;
+}
+}
+
+// .sidenav-wrapper .menu-wrapper .menu-items:hover,
+// .sidenav-min .menu-wrapper a:hover {
+//   background-color: lighten($color: $primary, $amount: 45%);
+//   transition: all 1s ease;
+// }
+// .sidenav-wrapper .menu-wrapper a,
+// .sidenav-min .menu-wrapper a {
+//   transition: all 1s ease;
+// }
+// .sidenav-wrapper .menu-wrapper a.active,
+// .sidenav-min .menu-wrapper a.active {
+//   background-color: $primary;
+//   color: $primary !important;
+//   font-weight: bold;
+// }
+// .sidenav-wrapper .menu-wrapper a.active .active-border,
+// .sidenav-min .menu-wrapper a.active .active-border {
+//   position: relative;
+//   left: 0;
+//   border-left: 4px solid $primary;
+// }
+// .sidenav-wrapper .menu-wrapper a .active-border,
+// .sidenav-min .menu-wrapper a .active-border {
+//   position: relative;
+//   left: 0;
+//   border-left: 4px solid transparent;
+// }
+
+.menu-wrapper ul {
+  color: lighten($color: $dark, $amount: 75%);
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.menu-wrapper li {
+  line-height: 2rem;
+}
+
+.menu-wrapper li a{
+  margin-left: 20%;
+  display: flex;
+  color: lighten($color: $dark, $amount: 75%);
+}
+
+::ng-deep .accordion-wrapper .card-header{
+  background-color: lighten($color: $primary, $amount: 10%);
+  border-bottom: 0;
+}
+
+::ng-deep .accordion-wrapper .card-body{
+  background-color: lighten($color: $primary, $amount: 10%);
+  padding: 0;
+}
+
+::ng-deep .accordion-wrapper .card{
+  border: 0;
+}
+
+::ng-deep .accordion-wrapper.panel-open .card-header{
+  border-bottom: 0;
+}

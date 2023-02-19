@@ -12,6 +12,7 @@ body {
     padding: 0px;
     font-size: 95%;
     font-family: 'Poppins', sans-serif;
+    background-color: lighten($color: $grey100, $amount: 6%);
 }
 
 .cp {
@@ -29,7 +30,9 @@ body {
 .fw-300 {
     font-weight: 300;
 }
-
+.fs0-75 {
+    font-size: 75%;
+}
 .fs0-8 {
     font-size: 80%;
 }
@@ -89,4 +92,85 @@ body {
     padding: 12px 16px;
     color: $orange;
     border-left: 0px !important;
+}
+
+/* Background color css*/
+
+.bg-primary{
+    background-color: $primary;
+}
+.bg-secondary{
+    background-color: $secondary;
+}
+.bg-danger{
+    background-color: $danger;
+}
+.bg-warning{
+    background-color: $warning;
+}
+.bg-success{
+    background-color: $success;
+}
+.bg-dark{
+    background-color: $dark;
+}
+.bg-primary-lighten{
+background-color: lighten($color: $primary, $amount: 20%);
+}
+.bg-dark-lighten{
+    background-color: lighten($color: $dark, $amount: 80%);
+}
+
+/* Text Css */
+
+.text-gray-lighten{
+    color: lighten($color: $grey200, $amount: 0);
+}
+
+/* Height css*/
+
+.ht-20px{
+    height: 20px;
+}
+.ht-30px{
+    height: 30px;
+}
+.ht-40px{
+    height: 40px;
+}
+.ht-50px{
+    height: 50px;
+}
+.ht-60px{
+    height: 60px;
+}
+.ht-70px{
+    height: 70px;
+}
+.ht-100px{
+    height: 100px;
+}
+
+/* Width Css*/
+
+.w-50px{
+    width:50px;
+}
+
+/* Border CSS*/
+
+.br-0{
+    border-radius: 0;
+}
+.br-tl-0{
+    border-top-left-radius: 0;
+}
+.br-tr-0{
+    border-top-right-radius: 0;
+}
+.br-bl-0{
+    border-bottom-left-radius: 0;
+}
+.br-br-0{
+    border-bottom-right-radius: 0;
 }

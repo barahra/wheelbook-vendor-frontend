@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SideNavComponent } from './side-nav/side-nav.component';
-
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -9,7 +10,9 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     SideNavComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FontAwesomeModule,
+    AccordionModule
   ],
   exports:[
     SideNavComponent

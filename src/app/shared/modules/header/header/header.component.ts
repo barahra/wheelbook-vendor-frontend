@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faBars, faBell, faMessage, faPowerOff, faSearch, faUserTie } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  faSearch = faSearch;
+  faMessage = faMessage;
+  faBell = faBell;
+  faPowerOff = faPowerOff;
+  faUserTie = faUserTie
+  version:any ='0.0.0'
+
+  constructor(){}
+
+  ngOnInit(){}
 
 }

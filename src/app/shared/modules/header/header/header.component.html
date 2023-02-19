@@ -1,1 +1,75 @@
-<p>header works!</p>
+<div class="navbar-dark h-100">
+  <div class="container-fluid h-100">
+    <div class="row align-items-center header-wrapper">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-lg-3 col-xl-3">
+            
+          </div>
+          <div class="col-sm-12 col-lg-9 col-xl-9">
+            <div class="row align-items-center">
+              <div class="col-12 text-end">
+                <span class="d-inline-block me-3">
+                  <span class="pe-3">
+                    <fa-icon class="text-gray-lighten" [icon]="faSearch"></fa-icon>
+                  </span>
+                  <span class="ps-3 pe-3 text-muted">
+                    <fa-icon class="text-gray-lighten" [icon]="faMessage"></fa-icon>
+                  </span>
+                  <span class="ps-3 pe-3">
+                    <fa-icon class="text-gray-lighten" [icon]="faBell"></fa-icon>
+                  </span>
+                </span>
+                <div class="btn-group" dropdown>
+                  <button id="button-user-profile" dropdownToggle type="button"
+                    class="bg-transparent dropdown-toggle border-0 shadow-none outline-none"
+                    aria-controls="dropdown-basic">
+                    <span class="circle d-inline-block bg-dark-lighten">
+                      <fa-icon class="color-icon fs-4 text-primary" [icon]="faUserTie"></fa-icon>
+                    </span>
+                  </button>
+                  <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu dropdown-menu-right user-dropdown mt-0 mb-0"
+                    role="menu" aria-labelledby="button-user-profile">
+                    <li role="menuitem">
+                      <div class="p-2">
+                        <table class="h-100 w-100">
+                          <tr>
+                            <td class="" style="width:30px">
+                              <fa-icon
+                                class="color-icon text-primary bg-dark-lighten rounded-circle text-center d-inline-block ht-50px w-50px fs-3 pt-1 me-3"
+                                [icon]="faUserTie"></fa-icon>
+                            </td>
+                            <td>
+                              <div class="fs0-9 fw-bold">Name</div>
+                              <div class="fs0-9 Text-muted">Role</div>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </li>
+                    <li class="divider dropdown-divider mt-0 mb-0"></li>
+                    <li role="menuitem">
+                      <div class="p-2 pt-3 pb-3">
+                        <button class="btn btn-default btn-sm rounded-pill border shadow-none p-2 ps-3 pe-3">
+                          <fa-icon class="me-2 fs0-9" [icon]="faPowerOff">
+                          </fa-icon>
+                          Logout
+                        </button>
+                      </div>
+                    </li>
+                    <li class="divider dropdown-divider mt-0 mb-0"></li>
+                    <li role="menuitem" class="text-muted">
+                      <div class="p-2 ps-3">
+                        Version : {{ version }}
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
