@@ -1,17 +1,26 @@
-<div class="container-fluid h-100 pe-0">
-    <div class="d-flex flex-column flex-shrink-0 text-white mt-3 h-100">
+<div class="h-100 pe-0">
+    <div class="d-flex flex-column flex-shrink-0 text-white h-100">
         <table class="w-100 h-100">
+            <tr class="sidenav-footer align-middle">
+                <td>
+                    <div class="text-center fs-5">
+                        Wheelbook    
+                    </div>
+                </td>
+            </tr>
             <tr>
                 <td class="align-top">
                     <div class="sidenav-content">
                         <ul class="nav nav-pills flex-column mb-auto">
                             <li class="nav-item" *ngFor="let menu of menuList">
-                                <a href="#" class="nav-link active text-uppercase" aria-current="page">
+                                <a href="#" class="nav-link text-uppercase text-white" aria-current="page">
+                                    <fa-icon [icon]="icons(menu)" class="pe-3"></fa-icon>
                                     {{menu.menu_name}}
                                 </a>
                                 <ng-container *ngIf="menu?.sub_menu?.length > 0">
-                                    <div class="ms-3" *ngFor="let sub_menu of menu?.sub_menu">
-                                        <a href="#" class="nav-link active" aria-current="page">
+                                    <div class="ms-4" *ngFor="let sub_menu of menu?.sub_menu">
+                                        <a href="#" class="nav-link text-ice" aria-current="page">
+                                            <fa-icon [icon]="icons(sub_menu)" class="pe-3"></fa-icon>
                                             {{sub_menu.menu_name}}
                                         </a>
                                     </div>
@@ -21,10 +30,12 @@
                     </div>
                 </td>
             </tr>
-            <tr class="sidenav-footer align-middle">
+            <tr class="sidenav-footer align-middle bg-warning">
                 <td>
-                    <div class="text-center">
-                        << Collapse </div>
+                    <div class="text-center text-uppercase">
+                        <fa-icon [icon]="faAngleDoubleLeft" class="pe-3"></fa-icon>
+                        Collapse 
+                    </div>
                 </td>
             </tr>
         </table>

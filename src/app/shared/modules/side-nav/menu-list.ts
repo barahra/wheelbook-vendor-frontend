@@ -1,16 +1,16 @@
 let menus = [
     {
         menu_name: "Dashboard",
-        icon: "faQuestion",
+        icon: "faDashboard",
         sub_menu: [
             {
                 menu_name: "Overview",
-                icon: "faQuestion",
+                icon: "faSearch",
                 link:""
             },
             {
                 menu_name: "Reports",
-                icon: "faQuestion",
+                icon: "faHandPaper",
                 link:""
             }
         ]
@@ -19,84 +19,84 @@ let menus = [
 
     {
         menu_name: "Vehicles",
-        icon: "faQuestion",
+        icon: "faCar",
         sub_menu: [
             {
                 menu_name: "All Vehicles",
-                icon: "faQuestion",
+                icon: "faCar",
                 link:""
             },
             {
                 menu_name: "Add Vehicles",
-                icon: "faQuestion",
+                icon: "faAdd",
             },
             {
                 menu_name: "Sales / Job",
-                icon: "faQuestion",
+                icon: "faMoneyBill",
             },
             {
                 menu_name: "Purchase Order",
-                icon: "faQuestion",
+                icon: "faCircleDollarToSlot",
             }
         ]
 
     },
     {
         menu_name: "Spares",
-        icon: "faQuestion",
+        icon: "faCog",
         sub_menu: [
             {
                 menu_name: "All Spares",
-                icon: "faQuestion",
+                icon: "faCogs",
             },
             {
                 menu_name: "Add Spares",
-                icon: "faQuestion",
+                icon: "faAdd",
             },
             {
                 menu_name: "Sales / Job",
-                icon: "faQuestion",
+                icon: "faMoneyBill",
             },
             {
                 menu_name: "Purchase Order",
-                icon: "faQuestion",
+                icon: "faCircleDollarToSlot",
             }
         ]
 
     },
     {
         menu_name: "Activities",
-        icon: "faQuestion",
+        icon: "faAddressBook",
         sub_menu: [
             {
                 menu_name: "Vehicles",
-                icon: "faQuestion",
+                icon: "faCar",
             },
             {
                 menu_name: "Spares",
-                icon: "faQuestion",
+                icon: "faCogs",
             },
             {
                 menu_name: "Adminstration",
-                icon: "faQuestion",
+                icon: "faUser",
             },
             {
                 menu_name: "Services",
-                icon: "faQuestion",
+                icon: "faUsers",
             }
         ]
     },
     {
         menu_name: "Insurance",
-        icon: "faQuestion",
+        icon: "faContactBook",
         sub_menu: [
             {
                 menu_name: "All Insurance",
-                icon: "faQuestion",
+                icon: "faGuaraniSign",
             },
             {
                 menu_name: "Add Insurance",
-                icon: "faQuestion",
+                icon: "faAdd",
             }
         ]
 
@@ -107,39 +107,39 @@ let menus = [
         sub_menu: [
             {
                 menu_name: "Users account",
-                icon: "faQuestion",
+                icon: "faUsers",
             },
             {
                 menu_name: "Customer Mangement",
-                icon: "faQuestion",
+                icon: "faUsers",
             },
             {
                 menu_name: "Dealer Mangement",
-                icon: "faQuestion",
+                icon: "faBuildingShield",
             },
             {
                 menu_name: "Vendor Mangement",
-                icon: "faQuestion",
+                icon: "faSnowman",
             },
             {
                 menu_name: "GST",
-                icon: "faQuestion",
+                icon: "faPercentage",
             },
             {
                 menu_name: "Discount",
-                icon: "faQuestion",
+                icon: "faPercentage",
             },
             {
                 menu_name: "Vehicles Model",
-                icon: "faQuestion",
+                icon: "faCar",
             },
             {
                 menu_name: "Notification / Messaging",
-                icon: "faQuestion",
+                icon: "faGlobe",
             },
             {
                 menu_name: "Campaign",
-                icon: "faQuestion",
+                icon: "faDigitalTachograph",
             }
         ]
 

@@ -4,6 +4,9 @@
   height: 100%;
   overflow: auto;
 }
+.text-ice{
+  color: lighten($color: $primary, $amount: 30%) !important;
+}
 .sidenav-footer{
   position: relative;
   height: 64px;

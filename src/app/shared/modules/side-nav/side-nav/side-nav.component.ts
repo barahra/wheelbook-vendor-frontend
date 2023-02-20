@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { faChevronDown, faCogs, faHome, faQuestion, faSquare } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDoubleLeft, faCogs, faDashboard, faQuestion } from '@fortawesome/free-solid-svg-icons';
+import * as ICONS from '@fortawesome/free-solid-svg-icons';
 import menus from "../menu-list"
 @Component({
   selector: 'app-side-nav',
@@ -7,13 +8,21 @@ import menus from "../menu-list"
   styleUrls: ['./side-nav.component.scss']
 })
 export class SideNavComponent {
-  faCogs=faCogs;
-  faQuestion=faQuestion;
+  ICONS = ICONS;
+  faCogs = faCogs;
+  faQuestion = faQuestion;
+  faDashboard = faDashboard;
+  faAngleDoubleLeft = faAngleDoubleLeft;
   isCollapsed = false;
-  menuList : any = [];
-  constructor(){
+
+  menuList: any = [];
+  constructor() {
     this.menuList = menus
   }
 
-  ngOnInit(){}
+  ngOnInit() { }
+
+  icons(iconObject: any) {
+    return eval(`this.ICONS.${iconObject.icon}`)
+  }
 }

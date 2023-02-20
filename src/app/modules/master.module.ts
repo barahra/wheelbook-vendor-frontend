@@ -6,6 +6,7 @@ import { MasterComponent } from './master.component';
 import { HeaderModule } from '../shared/modules/header/header.module';
 import { FooterModule } from '../shared/modules/footer/footer.module';
 import { SideNavModule } from '../shared/modules/side-nav/side-nav.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -18,7 +19,8 @@ import { SideNavModule } from '../shared/modules/side-nav/side-nav.module';
     MasterRoutingModule,
     HeaderModule,
     FooterModule,
-    SideNavModule
+    SideNavModule,
+    FontAwesomeModule
   ]
 })
 export class MasterModule { }
