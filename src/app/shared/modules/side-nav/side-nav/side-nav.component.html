@@ -1,111 +1,32 @@
-<div class="row">
-    <div class="col-sm-12">
-        <div class="sidenav-wrapper">
-            <div class="logo text-center p-3 fs-4 text-white fw-500 border-bottom border-muted">
-                Logo
-            </div>
-            <div class="menu-wrapper p-3">
-                <accordion [isAnimated]="true">
-                    <accordion-group class="accordion-wrapper">
-                        <div class="btn bg-transparent shadow-none outline-none text-white d-block ht-40px border-0 br-0"
-                            accordion-heading type="button">
-                            <div class="text-start d-flex justify-content-around">
-                                <span class="">
-                                    <fa-icon class="text-gray-lighten me-3" [icon]="faHome"></fa-icon>
-                                    DashBoard
-                                </span>
-                                <span class="pe-3">
-                                    <fa-icon class="text-gray-lighten" [icon]="faChevronDown"></fa-icon>
-                                </span>
-                            </div>
-                        </div>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a class="text-decoration-none" href="#">
-                                    <fa-icon class="text-gray-lighten fs0-75 me-3" [icon]="faSquare"></fa-icon>
-                                    Overview
+<div class="container-fluid h-100 pe-0">
+    <div class="d-flex flex-column flex-shrink-0 text-white mt-3 h-100">
+        <table class="w-100 h-100">
+            <tr>
+                <td class="align-top">
+                    <div class="sidenav-content">
+                        <ul class="nav nav-pills flex-column mb-auto">
+                            <li class="nav-item" *ngFor="let menu of menuList">
+                                <a href="#" class="nav-link active text-uppercase" aria-current="page">
+                                    {{menu.menu_name}}
                                 </a>
-                            </li>
-                            <li>
-                                <a class="text-decoration-none" href="#">
-                                    <fa-icon class="text-gray-lighten fs0-75 me-3" [icon]="faSquare"></fa-icon>
-                                    Report
-                                </a>
-                            </li>
-                        </ul>
-                    </accordion-group>
-                    <accordion-group class="accordion-wrapper">
-                        <div class="btn bg-transparent shadow-none outline-none text-white d-block ht-40px border-0 br-0"
-                            accordion-heading type="button">
-                            <div class="text-start d-flex justify-content-around">
-                                <span class="">
-                                    <fa-icon class="text-gray-lighten me-3" [icon]="faHome"></fa-icon>
-                                    Vehicles
-                                </span>
-                                <span class="pe-3">
-                                    <fa-icon class="text-gray-lighten" [icon]="faChevronDown"></fa-icon>
-                                </span>
-                            </div>
-                        </div>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a class="text-decoration-none" href="#">
-                                    <fa-icon class="text-gray-lighten fs0-75 me-3" [icon]="faSquare"></fa-icon>
-                                    All Vehicles
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-decoration-none" href="#">
-                                    <fa-icon class="text-gray-lighten fs0-75 me-3" [icon]="faSquare"></fa-icon>
-                                    Add Vehicles
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-decoration-none" href="#">
-                                    <fa-icon class="text-gray-lighten fs0-75 me-3" [icon]="faSquare"></fa-icon>
-                                    Sales/Job
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-decoration-none" href="#">
-                                    <fa-icon class="text-gray-lighten fs0-75 me-3" [icon]="faSquare"></fa-icon>
-                                    Purchase Order
-                                </a>
-                            </li>
-                        </ul>
-                    </accordion-group>
-                </accordion>
-            </div>
-        </div>
-
-        <!-- To show only icons of sidenav on small screens -->
-        <div class="sidenav-min">
-            <div class="row h-100">
-                <div class="col-sm-12">
-                    <div class="logo text-center p-3 fs-4 text-white fw-500 border-bottom">
-                        Logo
-                    </div>
-                    <div class="menu-wrapper">
-                        <table class="h-100 w-100">
-                            <tr>
-                                <td class="align-top">
-                                    <div class="row h-100">
-                                        <div class="col-sm-12">
-                                            <div class="">
-                                                <a class="text-decoration-none d-block pt-2 pb-2 text-black">
-                                                    <div class="p-3 text-white active-border">
-                                                       Sienav Min
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
+                                <ng-container *ngIf="menu?.sub_menu?.length > 0">
+                                    <div class="ms-3" *ngFor="let sub_menu of menu?.sub_menu">
+                                        <a href="#" class="nav-link active" aria-current="page">
+                                            {{sub_menu.menu_name}}
+                                        </a>
                                     </div>
-                                </td>
-                            </tr>
-                        </table>
+                                </ng-container>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-        </div>
+                </td>
+            </tr>
+            <tr class="sidenav-footer align-middle">
+                <td>
+                    <div class="text-center">
+                        << Collapse </div>
+                </td>
+            </tr>
+        </table>
     </div>
 </div>

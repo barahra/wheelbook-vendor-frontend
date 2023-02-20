@@ -1,8 +1,17 @@
 @import "/src/assets/scss/variables/variables";
 
-.main-wrapper{
+.page-wrapper{
     position: relative;
-    top: 65px;
-    transition: 0.5s;
-    margin-left: 300px;
+    height: calc(100vh);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.page-sidenav{
+    position: fixed;
+    top: 64px;
+    bottom: 0px;
+    width: 280px;
+    left: 0px;
+    background-color: $primary;
 }
