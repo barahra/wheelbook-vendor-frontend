@@ -7,11 +7,24 @@
     margin: 0px;
     padding: 0px;
 }
+.page-header{
+    position: fixed;
+    left: 280px;
+    right: 0px;
+}
 .page-sidenav{
     position: fixed;
-    top: 64px;
+    top: 0px;
     bottom: 0px;
     width: 280px;
     left: 0px;
     background-color: $primary;
+}
+.main-content{
+    position: fixed;
+    top: 64px;
+    bottom: 0px;
+    left: 280px;
+    right: 0px
+    
 }
