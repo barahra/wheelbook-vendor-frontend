@@ -49,6 +49,10 @@
     white-space: nowrap;
 }
 
+.table-wrapper .resultlist-body .d-table-cell{
+    border-bottom: 1px solid lighten($color: $grey200, $amount:5%);;
+}
+
 .table-wrapper .d-table-cell:nth-child(1) {
     width: 80px;
 }
