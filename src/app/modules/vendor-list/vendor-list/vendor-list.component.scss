@@ -1,0 +1,84 @@
+@import "/src/assets/scss/variables/variables";
+
+
+.pagination-wrapper .dropdown-menu {
+    min-width: 0px !important;
+    box-shadow: 1px 2px 6px lighten($color: $dark, $amount: 75%);
+    border-radius: 0;
+    border: 0 !important;
+    margin-left: 30px;
+}
+
+.pagination-wrapper .dropdown-menu .dropdown-item:active {
+    background-color: lighten($color: $grey200, $amount: 5%);
+    color: $dark !important;
+}
+
+// ResultList Css
+
+.tlf {
+    table-layout: fixed;
+}
+
+.table-wrapper .resultlist-body {
+    height: calc(100vh - 251px);
+    overflow: auto;
+}
+
+.table-wrapper .resultlist-body .d-table .d-table-row {
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: lighten($color: $primary, $amount: 35%);
+        transition: all 0.5s;
+    }
+}
+
+.table-wrapper .table-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.table-wrapper .d-table-cell {
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.table-wrapper .d-table-cell:nth-child(1) {
+    width: 80px;
+}
+
+.table-wrapper .d-table-cell:nth-child(2),
+.table-wrapper .d-table-cell:nth-child(3),
+.table-wrapper .d-table-cell:nth-child(5),
+.table-wrapper .d-table-cell:nth-child(6),
+.table-wrapper .d-table-cell:nth-child(7) {
+    width: 150px;
+}
+
+.table-wrapper .d-table-cell:nth-child(4) {
+    width: 250px;
+}
+
+.action-dropdown .dropdown-toggle:after {
+    content: none !important;
+}
+
+.action-dropdown-menu {
+    min-width: 40px !important;
+    box-shadow: 1px 2px 6px lighten($color: $dark, $amount: 75%);
+    border-radius: 0;
+    border: 0 !important;
+    transform: translateY(10px);
+    transform: translatex(-5px);
+}
+
+.action-dropdown-menu .dropdown-item:active {
+    background-color: lighten($color: $grey200, $amount: 5%);
+    color: $dark !important;
+}

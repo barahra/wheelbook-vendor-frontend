@@ -1,1 +1,135 @@
-hi
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-lg-12 col-xl-12 ps-0 pe-0">
+            <div class="p-3 bg-white rounded">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-lg-5 col-xl-5">
+                        <div class="fw-bold">Vendor</div>
+                        <div class="text-muted fs0-9">List of vendor</div>
+                    </div>
+                    <div class="col-sm-12 col-lg-7 col-xl-7">
+                        <div class="text-end">
+                            <div class="btn-group search-wrapper w-50 me-3">
+                                <div class="input-group">
+                                    <input type="text"
+                                        class="form-control shadow-none outline-none bg-light border-0 text-muted"
+                                        placeholder="Search vendor..">
+                                    <span class="input-group-text bg-light border-0">
+                                        <fa-icon class="text-muted" [icon]="faSearch"></fa-icon>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="btn-group pagination-wrapper me-3">
+                                <div class="btn-group" dropdown>
+                                    <button id="button-basic" dropdownToggle type="button"
+                                        class="btn btn-light dropdown-toggle" aria-controls="dropdown-basic">
+                                        Page <span class="caret"></span>
+                                    </button>
+                                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu pagination-dropdown p-0"
+                                        role="menu" aria-labelledby="button-basic">
+                                        <li role="menuitem"><a class="dropdown-item" href="#">1</a></li>
+                                        <li class="divider dropdown-divider m-0"></li>
+                                        <li role="menuitem"><a class="dropdown-item" href="#">2</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary shadow-none outline-none ps-3 pe-3">
+                                <fa-icon class="text-white me-1" [icon]="faFilter"></fa-icon>
+                                Filter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ResultList Starts -->
+                <div class="row mt-5">
+                    <div class="col-sm-12">
+                        <div class="table-wrapper">
+                            <div class="table-header" #tabheader>
+                                <div class="d-table w-100 tlf">
+                                    <div class="d-table-row">
+                                        <div class="d-table-cell p-2 text-start fw-bold text-uppercase">
+                                            Sr. No.
+                                        </div>
+                                        <div class="d-table-cell p-2 text-start fw-bold text-uppercase text-center">
+                                            Full Name
+                                        </div>
+                                        <div class="d-table-cell p-2 text-start fw-bold text-uppercase">
+                                            Email
+                                        </div>
+                                        <div class="d-table-cell p-2 text-start fw-bold text-uppercase text-center">
+                                            Address
+                                        </div>
+                                        <div class="d-table-cell p-2 text-start fw-bold text-uppercase text-center">
+                                            City
+                                        </div>
+                                        <div class="d-table-cell p-2 text-start fw-bold text-uppercase text-center">
+                                            Country
+                                        </div>
+                                        <div class="d-table-cell p-2 text-start fw-bold text-uppercase text-center">
+                                            Action
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resultlist-body" #container (scroll)="scrollHeaderOnBodyScroll()">
+                                <div class="d-table w-100 tlf">
+                                    <ng-container *ngFor="let list of [1,2,3,4]; let i = index">
+                                        <div class="d-table-row border-bottom">
+                                            <div class="d-table-cell p-2 text-start">
+                                                {{i+1}}
+                                            </div>
+                                            <div class="d-table-cell p-2 text-center">
+                                                John Smith
+                                            </div>
+                                            <div class="d-table-cell p-2 text-start">
+                                                John@gmail.com
+                                            </div>
+                                            <div class="d-table-cell p-2 text-center">
+                                                Lorem ipsum is simply dummy text Lorem ipsum is simply dummy text
+                                            </div>
+                                            <div class="d-table-cell p-2 text-center">
+                                                Bangalore
+                                            </div>
+                                            <div class="d-table-cell p-2 text-center">
+                                                India
+                                            </div>
+                                            <div class="d-table-cell p-2 text-center">
+                                                <div class="btn-group action-dropdown" dropdown container="body">
+                                                    <div class="bg-light rounded p-2 ps-3 pe-3 dropdown-toggle" dropdownToggle>
+                                                        <fa-icon class="text-muted" [icon]="faEllipsisV"
+                                                           >
+                                                        </fa-icon>
+                                                    </div>
+                                                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu action-dropdown-menu p-0"
+                                                        role="menu" aria-labelledby="button-basic">
+                                                        <li role="menuitem">
+                                                            <a class="dropdown-item" href="#">
+                                                                <span>
+                                                                    <fa-icon class="text-primary fs0-9 me-1" [icon]="faEdit"></fa-icon>
+                                                                </span>
+                                                                <span> Edit</span>
+                                                            </a>
+                                                        </li>
+                                                        <li role="menuitem">
+                                                            <a class="dropdown-item" href="#">
+                                                                <span>
+                                                                    <fa-icon class="text-danger fs0-9 me-1" [icon]="faTrash"></fa-icon>
+                                                                </span>
+                                                                <span> Delete</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-container>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
