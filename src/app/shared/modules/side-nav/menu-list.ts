@@ -112,14 +112,17 @@ let menus = [
             {
                 menu_name: "Customer Mangement",
                 icon: "faUsers",
+                nav : '/customer/list'
             },
             {
                 menu_name: "Dealer Mangement",
                 icon: "faBuildingShield",
+                nav : '/dealer/list'
             },
             {
                 menu_name: "Vendor Mangement",
                 icon: "faSnowman",
+                nav : '/vendor/list'
             },
             {
                 menu_name: "GST",

@@ -19,7 +19,7 @@
                                 </a>
                                 <ng-container *ngIf="menu?.sub_menu?.length > 0">
                                     <div class="ms-4" *ngFor="let sub_menu of menu?.sub_menu">
-                                        <a href="#" class="nav-link text-ice" aria-current="page">
+                                        <a [routerLink]="[sub_menu?.nav]"  class="nav-link text-ice" aria-current="page">
                                             <fa-icon [icon]="icons(sub_menu)" class="pe-3"></fa-icon>
                                             {{sub_menu.menu_name}}
                                         </a>
