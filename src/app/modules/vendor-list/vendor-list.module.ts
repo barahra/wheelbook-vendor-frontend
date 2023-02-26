@@ -5,6 +5,8 @@ import { VendorListRoutingModule } from './vendor-list-routing.module';
 import { VendorListComponent } from './vendor-list/vendor-list.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     CommonModule,
     VendorListRoutingModule,
     FontAwesomeModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    ModalModule.forRoot(),
+    NgSelectModule
   ]
 })
 export class VendorListModule { }

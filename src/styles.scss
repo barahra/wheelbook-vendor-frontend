@@ -3,6 +3,9 @@
 /*Including bootstrap scss*/
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
+/*Importing ng-select theme*/
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
 html,
 body {
     position: relative;
@@ -21,4 +24,8 @@ body {
 
 .ht-46px{
     height: 46px;
+}
+
+.border-lighten{
+    border-color: lighten($color: $grey200, $amount: 8%) !important;
 }
