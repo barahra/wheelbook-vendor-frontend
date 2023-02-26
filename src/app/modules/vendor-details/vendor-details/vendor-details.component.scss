@@ -1,0 +1,16 @@
+@import "/src/assets/scss/variables/variables";
+
+::ng-deep .tab-wrapper .nav-tabs .nav-link{
+    color:  lighten($color: $dark, $amount: 60%) !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+
+::ng-deep .tab-wrapper .nav-tabs{
+    border: 0 !important;
+}
+::ng-deep .tab-wrapper .nav-tabs .nav-link.active,
+ .nav-tabs .nav-item.show .nav-link{
+    color: $primary !important;
+    border-bottom: 3px solid $primary !important;
+}

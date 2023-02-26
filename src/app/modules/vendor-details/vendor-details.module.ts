@@ -3,7 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { VendorDetailsRoutingModule } from './vendor-details-routing.module';
 import { VendorDetailsComponent } from './vendor-details/vendor-details.component';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 @NgModule({
   declarations: [
@@ -11,7 +13,10 @@ import { VendorDetailsComponent } from './vendor-details/vendor-details.componen
   ],
   imports: [
     CommonModule,
-    VendorDetailsRoutingModule
+    VendorDetailsRoutingModule,
+    FontAwesomeModule,
+    ProgressbarModule,
+    TabsModule
   ]
 })
 export class VendorDetailsModule { }
