@@ -185,6 +185,52 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-sm-12 col-lg-4 mt-4">
+                    <label class="fw-bold w-100 ps-1">Company Name</label>
+                    <input type="text" class="form-control shadow-none outline-none bg-light border-0 mt-1"
+                        placeholder="Enter company name" />
+                </div>
+                <div class="col-sm-12 col-lg-4 mt-4">
+                    <label class="fw-bold w-100 ps-1">GST</label>
+                    <input type="text" class="form-control shadow-none outline-none bg-light border-0 mt-1"
+                        placeholder="Enter GST number" />
+                </div>
+                <div class="col-sm-12 col-lg-4 mt-4">
+                    <label class="fw-bold w-100 ps-1">PAN / TAN</label>
+                    <input type="text" class="form-control shadow-none outline-none bg-light border-0 mt-1"
+                        placeholder="Enter PAN / TAN detail" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-lg-4 mt-4">
+                    <label class="fw-bold w-100 ps-1">Primary Contact No. / Mobile No.</label>
+                    <input type="text" class="form-control shadow-none outline-none bg-light border-0 mt-1"
+                        placeholder="Enter primary mobile / contact number" />
+                </div>
+                <div class="col-sm-12 col-lg-4 mt-4">
+                    <label class="fw-bold w-100 ps-1">Primary Contact No. / Mobile No.</label>
+                    <input type="text" class="form-control shadow-none outline-none bg-light border-0 mt-1"
+                        placeholder="Enter secondary mobile / contact number" />
+                </div>
+                <div class="col-sm-12 col-lg-4 mt-4">
+                    <label class="fw-bold w-100 ps-1">Comment / About</label>
+                    <input type="text" class="form-control shadow-none outline-none bg-light border-0 mt-1"
+                        placeholder="Enter comment / about" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-lg-4 mt-4">
+                    <label class="fw-bold w-100 ps-1">Upload Document</label>
+                    <input type="file" class="form-control shadow-none outline-none bg-light border-0 mt-1"
+                        placeholder="Choose file" />
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12">
+                    <div class="border border-lighten"></div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-sm-12 col-lg-6 mt-4">
                     <label class="fw-bold w-100 ps-1">Address Line-1</label>
                     <input type="text" class="form-control shadow-none outline-none bg-light border-0 mt-1"
@@ -198,25 +244,30 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 col-lg-4 mt-4">
-                    <label class="fw-bold w-100 ps-1"></label>
+                    <label class="fw-bold w-100 ps-1">Land Mark</label>
                     <input type="text" class="form-control shadow-none outline-none bg-light border-0 mt-1"
                         placeholder="Enter landmark" />
+                </div>
+                <div class="col-sm-12 col-lg-4 mt-4">
+                    <label class="fw-bold w-100 ps-1">Pin Code</label>
+                    <input type="text" class="form-control shadow-none outline-none bg-light border-0 mt-1"
+                        placeholder="Enter pincode" />
                 </div>
                 <div class="col-sm-12 col-lg-4 mt-4">
                     <label class="fw-bold w-100 ps-1">City</label>
                     <ng-select [items]="dummyValues" class="mt-1" bindLabel="name" bindValue="id" placeholder="Select city">
                     </ng-select>
                 </div>
-                <div class="col-sm-12 col-lg-4 mt-4">
-                    <label class="fw-bold w-100 ps-1">State</label>
-                    <ng-select [items]="dummyValues" class="mt-1" bindLabel="name" bindValue="id" placeholder="Select State">
-                    </ng-select>
-                </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 col-lg-4 mt-4">
-                    <label class="fw-bold w-100 ps-1"></label>
-                    <ng-select [items]="dummyValues" class="mt-1" bindLabel="name" bindValue="id" placeholder="Select Country">
+                    <label class="fw-bold w-100 ps-1">State</label>
+                    <ng-select [items]="dummyValues" class="mt-1" bindLabel="name" bindValue="id" placeholder="Select state">
+                    </ng-select>
+                </div>
+                <div class="col-sm-12 col-lg-4 mt-4">
+                    <label class="fw-bold w-100 ps-1">Country</label>
+                    <ng-select [items]="dummyValues" class="mt-1" bindLabel="name" bindValue="id" placeholder="Select country">
                     </ng-select>
                 </div>
             </div>
