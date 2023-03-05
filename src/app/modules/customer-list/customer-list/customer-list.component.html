@@ -4,8 +4,8 @@
             <div class="p-3 bg-white rounded">
                 <div class="row align-items-center">
                     <div class="col-sm-12 col-lg-5 col-xl-5">
-                        <div class="fw-bold">Vendor</div>
-                        <div class="text-muted">List of vendor</div>
+                        <div class="fw-bold">Customer</div>
+                        <div class="text-muted">List of Customers</div>
                     </div>
                     <div class="col-sm-12 col-lg-7 col-xl-7">
                         <div class="text-end">
@@ -13,7 +13,7 @@
                                 <div class="input-group">
                                     <input type="text"
                                         class="form-control shadow-none outline-none bg-light border-0 text-muted"
-                                        placeholder="Search vendor..">
+                                        placeholder="Search customer..">
                                     <span class="input-group-text bg-light border-0">
                                         <fa-icon class="text-muted" [icon]="faSearch"></fa-icon>
                                     </span>
@@ -103,7 +103,7 @@
                                                     </div>
                                                     <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu action-dropdown-menu p-0"
                                                      role="menu" aria-labelledby="button-basic">
-                                                        <li role="menuitem" (click)="openEditVendorModal()">
+                                                        <li role="menuitem" (click)="openEditCustomerModal()">
                                                             <span>
                                                                 <fa-icon class="text-primary me-1" [icon]="faEdit"></fa-icon>
                                                             </span>
@@ -111,9 +111,9 @@
                                                         </li>
                                                         <li role="menuitem">
                                                                 <span>
-                                                                    <fa-icon class="text-danger me-1" [icon]="faTrash"></fa-icon>
+                                                                    <fa-icon class="text-muted me-1" [icon]="faListDots"></fa-icon>
                                                                 </span>
-                                                                <span> Delete</span>
+                                                                <span> Details</span>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -130,23 +130,23 @@
     </div>
 </div>
 
-<!-- Add & Edit Vendor Modal Template -->
-<ng-template #addEditVendorTemplate>
+<!-- Add & Edit Customer Modal Template -->
+<ng-template #addEditCustomerTemplate>
     <div class="modal-header">
         <h6 class="modal-title pull-left">
             <span>
-                <fa-icon class="text-muted me-2" [icon]="faUserEdit" *ngIf="isEditVendorTemplate"></fa-icon>
-                <fa-icon class="text-muted me-2" [icon]="faUserPlus" *ngIf="!isEditVendorTemplate"></fa-icon>
+                <fa-icon class="text-muted me-2" [icon]="faUserEdit" *ngIf="isEditCustomerTemplate"></fa-icon>
+                <fa-icon class="text-muted me-2" [icon]="faUserPlus" *ngIf="!isEditCustomerTemplate"></fa-icon>
             </span>
-            <span class="">{{ isEditVendorTemplate ? "Edit" : "Add" }} Vendor</span>
+            <span class="">{{ isEditCustomerTemplate ? "Edit" : "Add" }} Customer</span>
         </h6>
         <button type="button" class="btn-close shadow-none outline-none close pull-right" aria-label="Close"
-            (click)="addEditVendorTemplateRef?.hide()">
+            (click)="addEditCustomerTemplateRef?.hide()">
             <span aria-hidden="true" class="visually-hidden">&times;</span>
         </button>
     </div>
     <div class="modal-body">
-        <div class="p-3 vendor-modal-wrapper">
+        <div class="p-3 customer-modal-wrapper">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="fw-bold text-uppercase border-bottom border-lighten pb-1">
@@ -186,23 +186,6 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 col-lg-4 mt-4">
-                    <label class="fw-bold w-100 ps-1">Company Name</label>
-                    <input type="text" class="form-control shadow-none outline-none bg-light border-0 mt-1"
-                        placeholder="Enter company name" />
-                </div>
-                <div class="col-sm-12 col-lg-4 mt-4">
-                    <label class="fw-bold w-100 ps-1">GST</label>
-                    <input type="text" class="form-control shadow-none outline-none bg-light border-0 mt-1"
-                        placeholder="Enter GST number" />
-                </div>
-                <div class="col-sm-12 col-lg-4 mt-4">
-                    <label class="fw-bold w-100 ps-1">PAN / TAN</label>
-                    <input type="text" class="form-control shadow-none outline-none bg-light border-0 mt-1"
-                        placeholder="Enter PAN / TAN detail" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-lg-4 mt-4">
                     <label class="fw-bold w-100 ps-1">Primary Contact No. / Mobile No. <sup class="text-danger">*</sup></label>
                     <input type="text" class="form-control shadow-none outline-none bg-light border-0 mt-1"
                         placeholder="Enter primary mobile / contact number" />
@@ -218,7 +201,7 @@
                         placeholder="Enter comment / about" />
                 </div>
             </div>
-            <div class="row" *ngIf="!isEditVendorTemplate">
+            <div class="row" *ngIf="!isEditCustomerTemplate">
                 <div class="col-sm-12 col-lg-4 mt-4">
                     <label class="fw-bold w-100 ps-1">Upload Document</label>
                     <input type="file" class="form-control shadow-none outline-none bg-light border-0 mt-1"

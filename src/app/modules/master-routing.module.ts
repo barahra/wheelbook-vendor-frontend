@@ -8,13 +8,18 @@ const routes: Routes = [
     component: MasterComponent,
     children: [
       {
-        path: 'list',
+        path: 'vendor',
         loadChildren: () => import('./vendor-list/vendor-list.module').then(mod => mod.VendorListModule)
       },
       {
         path: 'details/:id',
         loadChildren: () => import('./vendor-details/vendor-details.module').then(mod => mod.VendorDetailsModule)
-      },]
+      },
+      {
+        path: 'customer',
+        loadChildren: () => import('./customer-list/customer-list.module').then(mod => mod.CustomerListModule)
+      },
+    ]
   }
 
 ];
